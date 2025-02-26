@@ -17,3 +17,4 @@ X = np.linalg.solve(A, B)
 print("Solution for X (x, y, z):", X)
 
 print("Solution for Y (x, y, z):", Y)
+
