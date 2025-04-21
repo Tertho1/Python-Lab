@@ -18,14 +18,14 @@ import numpy as np
 
 sizes = np.array([800, 1200, 1500, 1000, 130])
 prices = np.array([150, 220, 300, 180, 250])
-# data_matrix = np.array([sizes, prices])
-# print(data_matrix)
-# colum_mat=np.column_stack((sizes,prices))
-# print(colum_mat)
-# row_mat=np.vstack((sizes,prices))
-# print(row_mat)
+data_matrix = np.array([sizes, prices])
+print(data_matrix)
+colum_mat=np.column_stack((sizes,prices))
+print(colum_mat)
+row_mat=np.vstack((sizes,prices))
+print(row_mat)
 
-m,b=np.polyfit(sizes,prices,1)
+m,b=np.polyfit(sizes,prices,1)  
 # print(f"Slope: {m:.3f}, Intercept: {b:.3f}")
 
 # new_size=1100
@@ -40,13 +40,13 @@ import matplotlib.pyplot as plt
 # plt.legend()
 # plt.show()
 
-x_range=np.linspace(800.00,1500.00,10)
-y_range=m*x_range+b
-plt.plot(x_range,y_range,color='green',label='Regression line')
-plt.show()
-print(x_range,y_range)
-integral=np.trapezoid(y_range,x_range)
-print(f"Integral of regression line: {integral:.3f}")
+# x_range=np.linspace(800.00,1500.00,10)
+# y_range=m*x_range+b
+# plt.plot(x_range,y_range,color='green',label='Regression line')
+# plt.show()
+# print(x_range,y_range)
+# integral=np.trapezoid(y_range,x_range)
+# print(f"Integral of regression line: {integral:.3f}")
 
 # x=sizes
 # y=prices
