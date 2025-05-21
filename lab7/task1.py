@@ -39,6 +39,7 @@ def determine_grade(score):
 
 for subject in subject_columns:
     df[f'{subject}_Grade'] = df[subject].apply(determine_grade)
+print(df)
 
 a_counts = {subject: df[f'{subject}_Grade'].value_counts().get('A', 0) for subject in subject_columns}
 print("\nNumber of students who got an A in each subject:\n", a_counts)
